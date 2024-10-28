@@ -65,22 +65,6 @@ img {
     border: none;
     overflow: hidden;
 }
-
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .main-content {
-        margin-right: 0;
-    }
-}
-
 /* Changelog */
 .changelog {
   position: fixed;
@@ -123,3 +107,19 @@ img {
   padding-left: 20px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+}
+
+

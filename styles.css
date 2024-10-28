@@ -57,3 +57,40 @@ footer {
         margin-right: 0;
     }
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar iframe {
+    max-width: 100%;
+}
+
+.strava-widget, .lastfm-widget {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+}

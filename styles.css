@@ -1,8 +1,8 @@
 :root {
   --bg-color: rgb(255, 255, 255);
   --text-color: rgb(0, 0, 0);
-  --main-font: Arial, sans-serif;
-  --header-font: '3270', "Courier New", monospace;
+  --main-font: Arial, Helvetica, sans-serif;
+  --header-font: '3270', "Courier New", Courier, monospace;
 }
 
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
@@ -14,18 +14,37 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--main-font);
-    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-#content {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.main-content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 header {
@@ -36,48 +55,18 @@ footer {
     font-family: var(--main-font) !important;
     font-style: italic;
     font-size: 90%;
-}
-
-.main-content {
-    margin-right: 370px;
-}
-
-@media screen and (max-width: 768px) {
-    .lastfm-widget {
-        position: static;
-        display: block;
-        margin: 20px auto;
-        width: 100%;
-    }
-    .lastfm-widget img {
-        max-width: 100%;
-        height: auto;
-    }
-    .main-content {
-        margin-right: 0;
-    }
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
     padding: 20px;
 }
 
-.sidebar {
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.sidebar iframe {
+img {
     max-width: 100%;
+    height: auto;
 }
 
 .strava-widget, .lastfm-widget {
     width: 100%;
+    border: none;
 }
 
 @media screen and (max-width: 768px) {

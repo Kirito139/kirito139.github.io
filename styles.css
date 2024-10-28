@@ -80,3 +80,46 @@ img {
         margin-right: 0;
     }
 }
+
+/* Changelog */
+.changelog {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.changelog-toggle {
+  display: none;
+}
+
+.changelog-button {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.changelog-content {
+  display: none;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.changelog-toggle:checked ~ .changelog .changelog-content {
+  display: block;
+}
+
+.changelog-content h3 {
+  margin-top: 0;
+}
+
+.changelog-content ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}

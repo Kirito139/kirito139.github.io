@@ -1,6 +1,6 @@
 :root {
-  --bg-color: rgb(40, 40, 40);
-  --text-color: rgb(235, 219, 178);
+  --bg-color: #282828;
+  --text-color: #e2cca9;
   --main-font: Arial, Helvetica, sans-serif;
   --header-font: '3270', "Courier New", Courier, monospace;
 }

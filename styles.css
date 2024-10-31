@@ -1,7 +1,7 @@
 :root {
   --bg-color: #282828;
   --text-color: #e2cca9;
-  --main-font: Arial, Helvetica, sans-serif;
+  --main-font: 'Times New Roman', serif;
   --header-font: '3270', "Courier New", Courier, monospace;
 }
 

@@ -54,6 +54,15 @@ footer {
     text-align: center;
     padding: 20px;
 }
+.webring {
+    all: unset !important;
+    font-style: normal !important;
+    font-size: 90%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 img {
     max-width: 100%;
@@ -85,5 +94,3 @@ img {
         margin-right: 0;
     }
 }
-
-

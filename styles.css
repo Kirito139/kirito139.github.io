@@ -1,25 +1,107 @@
 :root {
-  --bg-color: #0E4732;
-  --text-color: #E67E80;
-  --main-font: 'Times New Roman', serif;
-  --header-font: '3270', "Courier New", Courier, monospace;
+  --bg-color: #282828; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; */
+  --text-color: #28FE14; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
+  --header-font: 'Terminess Nerd Font', 'Zpix', sans-serif;
+  --main-font: 'ProggyClean Nerd Font', 'Times New Roman', serif;
+  --footer-font: 'Silkscreen', serif;
 }
 
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Terminess Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProggyClean Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/ProggyCleanNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GohuFont uni11 Nerd Font';
+    src: url('https://kirito139.github.io/stash/fonts/GohuFont11NerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Zpix';
+    src: url('https://kirito139.github.io/stash/fonts/zpix.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: '3270';
     src: url('https://kirito139.github.io/stash/fonts/3270NerdFont-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('https://kirito139.github.io/stash/fonts/slkscr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('https://kirito139.github.io/stash/fonts/slkscrb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+header {
+    font-family: var(--header-font);
+    font-weight: normal;
+    /*-webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;*/
+}
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--main-font);
+    font-weight: normal;
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
+}
+pre {
+  font-family: 'GohuFont uni11 Nerd Font', sans-serif;
+  font-size: 11px;
+}
+
+footer {
+    font-family: var(--footer-font) !important;
+    font-style: normal;
+    font-size: 8px;
+    text-align: center;
+    padding: 20px;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
 }
 
 .container {
@@ -43,22 +125,11 @@ body {
     gap: 20px;
 }
 
-header {
-    font-family: var(--header-font);
-}
-
-footer {
-    font-family: var(--main-font) !important;
-    font-style: italic;
-    font-size: 90%;
-    text-align: center;
-    padding: 20px;
-}
 .webring {
     all: unset !important;
     font-style: normal !important;
     font-size: 90%;
-    text-align: center;
+    text-align<: center;
     padding: 20px;
     display: flex;
     justify-content: center;

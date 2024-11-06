@@ -1,6 +1,6 @@
 :root {
   --bg-color: #282828; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; */
-  --text-color: #28FE14; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
+  --text-color: #ffcc02; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
   --header-font: 'Terminess Nerd Font', 'Zpix', sans-serif;
   --main-font: 'ProggyClean Nerd Font', 'Times New Roman', serif;
   --footer-font: 'Silkscreen', serif;

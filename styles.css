@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #282828; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; */
-  --text-color: #ffcc02; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
+  --bg-color: #000000; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; gruvbox dark: #282828;*/
+  --text-color: #28fe14; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
   --header-font: 'Terminess Nerd Font', 'Zpix', sans-serif;
   --main-font: 'ProggyClean Nerd Font', 'Times New Roman', serif;
   --footer-font: 'Silkscreen', serif;
@@ -72,9 +72,9 @@
 header {
     font-family: var(--header-font);
     font-weight: normal;
-    /*-webkit-font-smoothing: none;
+    -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: unset;
-    font-smooth: never;*/
+    font-smooth: never;
 }
 
 body {
@@ -94,6 +94,55 @@ body {
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neigbor;
 }
+@media screen and (min-width: 601px) {
+    body:before {
+        content: "";
+        position: fixed;
+        opacity: 0.2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1000;
+        background-image: url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay.png);
+        background-repeat: all;
+        background-position: 0px 0px;
+        animation-name: Static;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(4);
+        box-shadow: inset 0px 0px 10em rgb(0 0 0 / 40%);
+    }
+
+    body:after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1000;
+        background-image: url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay2.png);
+        background-repeat: all;
+        background-position: 0px 0px;
+        animation-name: Static;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(4);
+    }
+}
+@keyframes Static {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px 4px;
+    }
+}
+
 pre {
   font-family: 'GohuFont uni11 Nerd Font', sans-serif;
   font-size: 11px;
@@ -113,7 +162,7 @@ footer {
     image-rendering: -o-crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neigbor;
-
+    color: inherit;
 }
 
 .container {
@@ -177,3 +226,4 @@ img {
         margin-right: 0;
     }
 }
+

@@ -1,12 +1,12 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 :root {
   --bg-color: #000000; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; gruvbox dark: #282828;*/
-  --text-color: #28fe14; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
+  --text-color: #7DF9FF; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
   --header-font: 'Terminess Nerd Font', 'Zpix', sans-serif;
-  --main-font: 'ProggyClean Nerd Font', 'Times New Roman', serif;
+  --main-font: 'ProggyClean Nerd Font', 'Times New Roman', 'Symbols Nerd Font Mono', sans-serif;
   --footer-font: 'Silkscreen', serif;
 }
 
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 @font-face {
     font-family: 'Terminess Nerd Font';
@@ -70,6 +70,7 @@
 }
 
 header {
+    text-align: center;
     font-family: var(--header-font);
     font-weight: normal;
     -webkit-font-smoothing: none;
@@ -144,8 +145,10 @@ body {
 }
 
 pre {
+    text-align: center;
   font-family: 'GohuFont uni11 Nerd Font', sans-serif;
   font-size: 11px;
+  color: #28FE14;
 }
 
 footer {
@@ -176,7 +179,7 @@ footer {
 .main-content {
     flex: 1;
     margin-right: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .sidebar {

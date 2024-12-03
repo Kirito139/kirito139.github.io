@@ -1,70 +1,90 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 :root {
-  --bg-color: #000000; /* Christmas red: #990000; Default dark: #181A1B; Default light: #FFFFFF; gruvbox dark: #282828;*/
-  --text-color: #7DF9FF; /* Christmas green: #28CD41; Default dark: E8E6E3; Defautl light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
+  --bg-color: #000000; /* Christmas red: #990000; Default dark: #181A1B;
+  Default light: #FFFFFF; gruvbox dark: #282828;*/
+  --text-color: #7DF9FF; /* Christmas green: #28CD41; Default dark: E8E6E3;
+  Default light: #000000; Terminal green: #28FE14; Amber: #FFCC02;*/
   --header-font: 'Terminess Nerd Font', 'Zpix', sans-serif;
-  --main-font: 'ProggyClean Nerd Font', 'Times New Roman', 'Symbols Nerd Font Mono', sans-serif;
+  --main-font: 'ProggyClean Nerd Font', 'Times New Roman', 'Symbols Nerd Font
+  Mono', sans-serif;
   --footer-font: 'Silkscreen', serif;
 }
 
 
 @font-face {
     font-family: 'Terminess Nerd Font';
-    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Regular.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Regular.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Terminess Nerd Font';
-    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Italic.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Italic.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'Terminess Nerd Font';
-    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-BoldItalic.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-BoldItalic.ttf')
+    format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: 'Terminess Nerd Font';
-    src: url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Bold.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/TerminessNerdFont-Bold.ttf')
+    format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'ProggyClean Nerd Font';
-    src: url('https://kirito139.github.io/stash/fonts/ProggyCleanNerdFont-Regular.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/ProggyCleanNerdFont-Regular.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'GohuFont uni11 Nerd Font';
-    src: url('https://kirito139.github.io/stash/fonts/GohuFont11NerdFont-Regular.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/GohuFont11NerdFont-Regular.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Zpix';
-    src: url('https://kirito139.github.io/stash/fonts/zpix.ttf') format('truetype');
+    src: url('https://kirito139.github.io/stash/fonts/zpix.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: '3270';
-    src: url('https://kirito139.github.io/stash/fonts/3270NerdFont-Regular.ttf') format('truetype');
+    src:
+    url('https://kirito139.github.io/stash/fonts/3270NerdFont-Regular.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Silkscreen';
-    src: url('https://kirito139.github.io/stash/fonts/slkscr.ttf') format('truetype');
+    src: url('https://kirito139.github.io/stash/fonts/slkscr.ttf')
+    format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Silkscreen';
-    src: url('https://kirito139.github.io/stash/fonts/slkscrb.ttf') format('truetype');
+    src: url('https://kirito139.github.io/stash/fonts/slkscrb.ttf')
+    format('truetype');
     font-weight: bold;
     font-style: bold;
 }
@@ -106,7 +126,8 @@ body {
         height: 100%;
         pointer-events: none;
         z-index: 1000;
-        background-image: url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay.png);
+        background-image:
+        url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay.png);
         background-repeat: all;
         background-position: 0px 0px;
         animation-name: Static;
@@ -126,7 +147,8 @@ body {
         height: 100%;
         pointer-events: none;
         z-index: 1000;
-        background-image: url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay2.png);
+        background-image:
+        url(https://raw.githubusercontent.com/Kirito139/stash/refs/heads/main/images/overlay2.png);
         background-repeat: all;
         background-position: 0px 0px;
         animation-name: Static;

@@ -230,3 +230,14 @@ img {
     }
 }
 
+#statuscafe {
+    padding: .5em;
+    /* background-color: midnightblue; */
+    border: 1px solid azure;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}

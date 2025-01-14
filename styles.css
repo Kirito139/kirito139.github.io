@@ -151,6 +151,30 @@ pre {
   color: #28FE14;
 }
 
+.implementation-container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.implementation-toggle {
+    display: none;
+}
+
+.implementation-title {
+    cursor: pointer;
+    font-weigt:bold;
+}
+
+.implementation-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.implementation-toggle:checked ~ .implementation-content {
+    max-height: 1000px;
+}
+
 footer {
     font-family: var(--footer-font) !important;
     font-style: normal;

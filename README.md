@@ -1,1 +1,1 @@
-My website, made while tripped out on a strong dose of PROcrastination.
+My website, made while pretending to do homew\*rk. In need of original art.

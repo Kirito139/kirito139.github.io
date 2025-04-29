@@ -26,23 +26,37 @@
 
         // All configuration options are optional.
         const webamp = new Webamp({
+            availableSkins: [
+                {
+                    url: "https://archive.org/cors/winampskin_Green-Dimension-V2/Green-Dimension-V2.wsz",
+                    name: "Green Dimension V2",
+                },
+                {
+                    url: "https://archive.org/cors/winampskin_mac_os_x_1_5-aqua/mac_os_x_1_5-aqua.wsz",
+                    name: "Mac OSX v1.5 (Aqua)",
+                },
+            ],
             // Optional.
-            initialTracks: [{
+            initialTracks: [
+              {
                 metaData: {
-                    artist: "DJ Mike Llama",
-                    title: "Llama Whippin' Intro",
+                  artist: "DJ Mike Llama",
+                  title: "Llama Whippin' Intro",
                 },
                 // NOTE: Your audio file must be served from the same domain as your HTML
                 // file, or served with permissive CORS HTTP headers:
                 // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
                 // Can be downloaded from: https://github.com/captbaritone/webamp/raw/master/mp3/llama-2.91.mp3
                 url: "./llama-2.91.mp3"
+              },
+              {
                 metaData: {
-                    artist: "Owl City",
-                    title: "Vanilla Twilight",
+                  artist: "Owl City",
+                  title: "Vanilla Twilight",
                 },
                 url: "./vanilla_twilight.mp3"
-            }],
+              }
+            ],
             // Optional. The default skin is included in the js bundle, and will be loaded by default.
             initialSkin: {
                 // NOTE: Your skin file must be served from the same domain as your HTML

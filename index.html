@@ -10,69 +10,6 @@
     <title>lexm's noodle shop</title>
 </head>
 <body>
-    <!-- You can use this URL, or download it and check it into your own project -->
-    <div id="winamp-container"></div>
-    <script>
-        // import Webamp from 'webamp';
-
-        // Or, if you installed via a script tag, `Winamp` is available on the global `window`:
-        const Winamp = window.Webamp;
-
-        // Check if Winamp is supported in this browser
-        if(!Webamp.browserIsSupported()) {
-            alert("Oh no! Webamp does not work!")
-            throw new Error("What's the point of anything?")
-        }
-
-        // All configuration options are optional.
-        const webamp = new Webamp({
-            availableSkins: [
-                {
-                    url: "https://archive.org/cors/winampskin_Green-Dimension-V2/Green-Dimension-V2.wsz",
-                    name: "Green Dimension V2",
-                },
-                {
-                    url: "https://archive.org/cors/winampskin_mac_os_x_1_5-aqua/mac_os_x_1_5-aqua.wsz",
-                    name: "Mac OSX v1.5 (Aqua)",
-                },
-                {
-                    url: "https://github.com/Kirito139/stash/blob/b920fe3bfda0bf89142aa2637a98e38115e45a23/webamp_skins/TopazAmp1-2.wsz",
-                    name: "Topaz Amp 1.2",
-                },
-            ],
-            // Optional.
-            initialTracks: [
-              {
-                metaData: {
-                  artist: "Mesh",
-                  title: "The Last One Standing",
-                },
-                // NOTE: Your audio file must be served from the same domain as your HTML
-                // file, or served with permissive CORS HTTP headers:
-                // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-                // Can be downloaded from: https://github.com/captbaritone/webamp/raw/master/mp3/llama-2.91.mp3
-                url: "./mesh_the_last_one_standing.mp3"
-              },
-              {
-                metaData: {
-                  artist: "Owl City",
-                  title: "Vanilla Twilight",
-                },
-                url: "./vanilla_twilight.mp3"
-              }
-            ],
-            // Optional. The default skin is included in the js bundle, and will be loaded by default.
-            initialSkin: {
-                // NOTE: Your skin file must be served from the same domain as your HTML
-                // file, or served with permissive CORS HTTP headers:
-                // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-                // Topaz can be downloaded from https://github.com/captbaritone/webamp/raw/master/skins/TopazAmp1-2.wsz
-                url: "https://kirito139.github.io/stash/webamp_skins/Mac_OS_X_-_Aqua.wsz"
-            },
-        });
-        // Render after the skin has loaded.
-        webamp.renderWhenReady(document.getElementById('winamp-container'));
-    </script>
     <script>NekoType="black"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
 href="https://webneko.net">Neko</a></h1>
@@ -107,6 +44,81 @@ href="https://webneko.net">Neko</a></h1>
                Gibson. <br> - I listen to a lot of metal, industrial, darkwave, etc. plus a
                smattering of other random stuff.</p>
                 <br>
+                <div id="winamp-container"></div>
+                <script>
+                    // import Webamp from 'webamp';
+
+                    // Or, if you installed via a script tag, `Winamp` is available on the global `window`:
+                    const Winamp = window.Webamp;
+
+                    // Check if Winamp is supported in this browser
+                    if(!Webamp.browserIsSupported()) {
+                        alert("Oh no! Webamp does not work!")
+                        throw new Error("What's the point of anything?")
+                    }
+
+                    // All configuration options are optional.
+                    const webamp = new Webamp({
+                        availableSkins: [
+                            {
+                                url: "https://archive.org/cors/winampskin_Green-Dimension-V2/Green-Dimension-V2.wsz",
+                                name: "Green Dimension V2",
+                            },
+                            {
+                                url: "https://archive.org/cors/winampskin_mac_os_x_1_5-aqua/mac_os_x_1_5-aqua.wsz",
+                                name: "Mac OSX v1.5 (Aqua)",
+                            },
+                            {
+                                url: "https://github.com/Kirito139/stash/webamp_skins/TopazAmp1-2.wsz",
+                                name: "Topaz Amp 1.2",
+                            },
+                        ],
+                        // Optional.
+                        initialTracks: [
+                            {
+                                metaData: {
+                                    artist: "Lords of Black",
+                                    title: "Tears I Will Be",
+                                },
+                                url: "./tears+i+will+be_lords+of+black.mp3"
+                            {
+                                metaData: {
+                                    artist: "Mesh",
+                                    title: "The Last One Standing",
+                                },
+                                // NOTE: Your audio file must be served from the same domain as your HTML
+                                // file, or served with permissive CORS HTTP headers:
+                                // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                                // Can be downloaded from: https://github.com/captbaritone/webamp/raw/master/mp3/llama-2.91.mp3
+                                url: "./mesh_the_last_one_standing.mp3"
+                            },
+                            {
+                                metaData: {
+                                    artist: "Owl City",
+                                    title: "Vanilla Twilight",
+                                },
+                                url: "./vanilla_twilight.mp3"
+                            }
+                            {
+                                metaData: {
+                                    artist: "The Pineapple Thief",
+                                    title: "Preparation for Meltdown",
+                                },
+                                url: "./preparation+for+meltdown_the+pineapple+thief.mp3"
+                            }
+                        ],
+                        // Optional. The default skin is included in the js bundle, and will be loaded by default.
+                        initialSkin: {
+                            // NOTE: Your skin file must be served from the same domain as your HTML
+                            // file, or served with permissive CORS HTTP headers:
+                            // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                            // Topaz can be downloaded from https://github.com/captbaritone/webamp/raw/master/skins/TopazAmp1-2.wsz
+                            url: "https://kirito139.github.io/stash/webamp_skins/Mac_OS_X_-_Aqua.wsz"
+                        },
+                    });
+                    // Render after the skin has loaded.
+                    webamp.renderWhenReady(document.getElementById('winamp-container'));
+                </script>
                 <!-- wakatime languages pie chart -->
                 <a href="https://wakatime.com"><img
                     src="https://wakatime.com/share/@Kirito139/55e761bc-0cc6-4124-8e2c-921a564ff9f5.png"/></a>
@@ -189,7 +201,7 @@ And the client exclaimed with a snarl and a taunt
             <br>
             Sign my <a href="https://kirito139.atabook.org" style="color: inherit;">guestbook!</a>
             </p>
-            <iframe src="https://incr.easrng.net/badge?key=changeme" style="background:
+            <iframe src="https://incr.easrng.net/badge?key=lexm" style="background:
                 url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31"
                 frameborder="0"></iframe>
             <p style="color: red"> Site rated WEB-14 </p>

@@ -175,6 +175,30 @@ pre {
     max-height: 1000px;
 }
 
+.emotion-container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.emotion-toggle {
+    display: none;
+}
+
+.emotion-title {
+    cursor: pointer;
+    font-weigt:bold;
+}
+
+.emotion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.emotion-toggle:checked ~ .emotion-content {
+    max-height: 1000px;
+}
+
 footer {
     font-family: var(--footer-font) !important;
     font-style: normal;

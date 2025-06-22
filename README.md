@@ -1,1 +1,1 @@
-My website, made while pretending to do homew\*rk. In need of original art.
+My sucky website, made while pretending to do homew\*rk. Always in progress.

@@ -1,0 +1,35 @@
+:root {
+    --bg-color: #201533;
+    --text-color: #ffffff;
+    --link-color: #0ce6f2;
+    --visited-color: #0098db;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: var(--link-color);
+    text-decoration-style: dotted;
+}
+
+a:visited {
+    text-decoration-style: solid;
+    color: var(--visited-color);
+}
+
+a:hover {
+    text-decoration-style: solid;
+    color: var(--text-color);
+}
+
+a:active {
+    text-decoration-style: wavy;
+    color: var(--link-color);
+}
